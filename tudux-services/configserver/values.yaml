@@ -1,0 +1,21 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+deploymentName: configserver-deployment
+deploymentLabel: configserver
+
+replicaCount: 1
+
+image:
+  repository: tudux/configserver
+  tag: latest
+
+containerPort: 8071
+
+service:
+  type: LoadBalancer
+  port: 8071
+  targetPort: 8071
+
+config_enabled: false
+profile_enabled: false
+eureka_enabled: false

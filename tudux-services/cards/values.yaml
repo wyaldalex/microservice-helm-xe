@@ -1,0 +1,22 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: cards-deployment
+deploymentLabel: cards
+
+replicaCount: 1
+
+image:
+  repository: tudux/cards
+  tag: latest
+
+containerPort: 8090
+
+service:
+  type: LoadBalancer
+  port: 8090
+  targetPort: 8090
+
+config_enabled: true
+profile_enabled: true
+eureka_enabled: true

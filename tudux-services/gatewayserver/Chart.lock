@@ -1,0 +1,6 @@
+dependencies:
+- name: tudux-common
+  repository: file://../../tudux-common
+  version: 0.1.0
+digest: sha256:d1a4b882dde8eab2781f6a1d4006413e920881ffb426c05f1e10469b359c82a6
+generated: "2022-06-09T20:23:39.9541119-06:00"
